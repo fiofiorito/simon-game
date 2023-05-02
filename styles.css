@@ -66,6 +66,11 @@ body {
 }
 
 @media(max-width: 600px) {
+  .container {
+  width: 75%;
+  margin: auto
+  }
+  
   #level-title {
     font-size: 2rem;
   }
@@ -73,8 +78,8 @@ body {
   .btn {
     margin: 25px;
     display: inline-block;
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     border: 8px solid black;
     border-radius: 20%;
   }
