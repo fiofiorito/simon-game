@@ -2,14 +2,26 @@ let gamePattern = [];
 let buttonColours = ["red", "blue", "green", "yellow"];
 let userClickedPattern = [];
 
-//lets the game start when any key on the keyboard is pressed. It only works with the first sequence of the game
+
 let gameStarted = false;
-$(document).on('keydown', function(event) {
-    if (!gameStarted) {
-        nextSequence();
-        gameStarted = true;
-    }
-})
+// lets the game star on touch screen devices.
+if ("ontouchstart" in document.documentElement) {
+    $(document).on('touchstart', function(event) {
+        if (!gameStarted) {
+            nextSequence();
+            gameStarted = true;
+        };
+    });
+} else {
+    //lets the game start when any key on the keyboard is pressed. It only works with the first sequence of the game
+    $(document).on('keydown', function(event) {
+        if (!gameStarted) {
+            nextSequence();
+            gameStarted = true;
+        }
+    });
+}
+
 
 // lights up any of the four colors and stores them inside the gamePattern array
 let level = 0;
