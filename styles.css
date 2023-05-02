@@ -67,7 +67,7 @@ body {
 
 @media(max-width: 600px) {
   .container {
-  width: 75%;
+  width: 95%;
   margin: auto
   }
   
@@ -86,7 +86,7 @@ body {
 }
 
 /* just for fun - media query for 320px screen size */
-@media(max-width: 320px) {
+/* @media(max-width: 320px) {
   #level-title {
     font-size: 1.5rem;
   }
@@ -98,4 +98,4 @@ body {
     border: 5px solid black;
     border-radius: 20%;
   }
-}
+} */
